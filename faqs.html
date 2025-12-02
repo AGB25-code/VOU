@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Perguntas frequentes sobre a VO.U. e voluntariado universitário. Encontre respostas sobre como participar, requisitos e benefícios.">
+  <title>FAQs | VO.U. - Associação de Voluntariado Universitário</title>
+
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <style>
+    .faq-item {
+      margin-bottom: var(--space-4);
+    }
+
+    .faq-item:last-child {
+      margin-bottom: 0;
+    }
+
+    .faq-question {
+      background: white;
+      border-radius: var(--radius-lg);
+      padding: var(--space-6);
+      box-shadow: var(--shadow-md);
+      transition: var(--transition-base);
+    }
+
+    .faq-question:hover {
+      box-shadow: var(--shadow-lg);
+      transform: translateY(-2px);
+    }
+
+    .faq-question h4 {
+      color: var(--color-primary);
+      margin-bottom: var(--space-3);
+      display: flex;
+      align-items: flex-start;
+      gap: var(--space-3);
+    }
+
+    .faq-question h4 i {
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .faq-question p {
+      color: var(--text-primary);
+      line-height: var(--leading-relaxed);
+    }
+
+    .faq-question a {
+      color: var(--color-primary);
+      text-decoration: underline;
+      transition: var(--transition-fast);
+    }
+
+    .faq-question a:hover {
+      color: var(--color-primary-dark);
+    }
+  </style>
+</head>
+<body>
+  <a href="#main-content" class="skip-to-main">Saltar para o conteúdo principal</a>
+
+  <!-- ==================== HEADER ==================== -->
+  <header class="header" id="header">
+    <div class="container header__container">
+      <!-- Logo -->
+      <a href="index.html" class="header__logo">
+        <img src="images/logos/logo.png" alt="VO.U. - Associação de Voluntariado Universitário" class="header__logo-img">
+      </a>
+
+      <!-- Navigation -->
+      <nav class="nav">
+        <button class="nav__toggle" id="nav-toggle" aria-label="Toggle navigation">
+          <span class="nav__toggle-line"></span>
+          <span class="nav__toggle-line"></span>
+          <span class="nav__toggle-line"></span>
+        </button>
+
+        <ul class="nav__list" id="nav-menu">
+          <li class="nav__item">
+            <a href="index.html" class="nav__link" data-i18n="nav.home">Início</a>
+          </li>
+          <li class="nav__item">
+            <a href="sobre.html" class="nav__link" data-i18n="nav.about">Sobre</a>
+          </li>
+          <li class="nav__item">
+            <a href="nucleos.html" class="nav__link" data-i18n="nav.cores">Núcleos</a>
+          </li>
+          <li class="nav__item">
+            <a href="projetos.html" class="nav__link" data-i18n="nav.projects">Projetos</a>
+          </li>
+          <li class="nav__item">
+            <a href="faqs.html" class="nav__link active" data-i18n="nav.faqs">FAQs</a>
+          </li>
+          <li class="nav__item">
+            <a href="contactos.html" class="nav__link" data-i18n="nav.contact">Contactos</a>
+          </li>
+          <li class="nav__item nav__cta">
+            <a href="inscricoes.html#main-content" class="btn btn-primary" data-i18n="nav.join">Junta-te a Nós</a>
+          </li>
+          <li class="nav__item nav__item--language">
+            <div class="language-toggle">
+              <button class="language-toggle__btn" data-lang="pt" aria-label="Switch to Portuguese">PT</button>
+              <span class="language-toggle__separator">|</span>
+              <button class="language-toggle__btn" data-lang="en" aria-label="Switch to English">EN</button>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- Hero Section -->
+    <section class="hero" style="min-height: 50vh;">
+      <div class="hero__background">
+        <div style="position: absolute; inset: 0; background: linear-gradient(135deg, var(--color-yellow-600) 0%, var(--color-yellow-800) 100%);"></div>
+      </div>
+      <div class="hero__content">
+        <p class="hero__subtitle" data-i18n="faqs.hero.subtitle">Perguntas Frequentes</p>
+        <h1 class="hero__title" data-i18n="faqs.hero.title">FAQ</h1>
+        <p class="hero__description" data-i18n="faqs.hero.description">
+          Respostas às perguntas mais comuns sobre a VO.U. e o voluntariado
+        </p>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section section-lg">
+      <div class="container">
+        <div style="max-width: 900px; margin: 0 auto;">
+          <div class="faq-item">
+            <div class="faq-question">
+              <h4>
+                <i class="fas fa-question-circle"></i>
+                <span data-i18n="faqs.q1.question">Como posso tornar-me voluntário?</span>
+              </h4>
+              <p data-i18n="faqs.q1.answer">
+                É muito simples! Basta preencher o <a href="inscricoes.html#main-content">formulário de inscrição</a> no nosso website. Após a submissão, a nossa equipa entrará em contacto contigo para agendar uma entrevista e conhecer melhor as tuas motivações e disponibilidade.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <h4>
+                <i class="fas fa-question-circle"></i>
+                <span data-i18n="faqs.q2.question">Preciso de experiência prévia em voluntariado?</span>
+              </h4>
+              <p data-i18n="faqs.q2.answer">
+                Não! A VO.U. está aberta a todos, independentemente da experiência. Oferecemos formação e acompanhamento para todos os novos voluntários, garantindo que te sentes preparado e confiante nas tuas atividades.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <h4>
+                <i class="fas fa-question-circle"></i>
+                <span data-i18n="faqs.q3.question">Quanto tempo preciso de dedicar ao voluntariado?</span>
+              </h4>
+              <p data-i18n="faqs.q3.answer">
+                A disponibilidade é flexível e adaptada às tuas necessidades. Podes dedicar desde 1-2 horas por semana até mais tempo, consoante a tua disponibilidade. O importante é o compromisso e a consistência nas atividades que escolhes.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <h4>
+                <i class="fas fa-question-circle"></i>
+                <span data-i18n="faqs.q4.question">Posso escolher em que projetos participar?</span>
+              </h4>
+              <p data-i18n="faqs.q4.answer">
+                Sim! Durante o processo de inscrição, podes indicar as áreas e projetos que mais te interessam. Tentamos sempre alinhar os teus interesses com as necessidades dos nossos projetos.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <h4>
+                <i class="fas fa-question-circle"></i>
+                <span data-i18n="faqs.q5.question">Recebo certificado pelas horas de voluntariado?</span>
+              </h4>
+              <p data-i18n="faqs.q5.answer">
+                Sim! Todos os voluntários recebem certificação oficial das horas de voluntariado realizadas, o que pode ser valioso para o teu currículo académico e profissional.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <h4>
+                <i class="fas fa-question-circle"></i>
+                <span data-i18n="faqs.q6.question">Como posso estabelecer uma parceria com a VO.U.?</span>
+              </h4>
+              <p data-i18n="faqs.q6.answer">
+                Estamos sempre abertos a parcerias! Envia-nos um email para <a href="mailto:geral@vou.pt">geral@vou.pt</a> ou preenche o <a href="contactos.html">formulário de contacto</a> indicando "Parcerias" como assunto. A nossa equipa do Núcleo Externo entrará em contacto contigo.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section">
+      <div class="container">
+        <div class="cta">
+          <h2 class="cta__title" data-i18n="faqs.cta.title">Ainda tens dúvidas?</h2>
+          <p class="cta__description" data-i18n="faqs.cta.description">
+            Entra em contacto connosco! Estamos aqui para esclarecer todas as tuas questões.
+          </p>
+          <div class="cta__buttons">
+            <a href="contactos.html" class="btn btn-primary btn-lg" style="background: white; color: var(--color-secondary); border-color: white;">
+              <i class="fas fa-envelope"></i>
+              <span data-i18n="faqs.cta.btnContact">Contacta-nos</span>
+            </a>
+            <a href="inscricoes.html#main-content" class="btn btn-outline-primary btn-lg" style="border-color: white; color: white;">
+              <i class="fas fa-hands-helping"></i>
+              <span data-i18n="faqs.cta.btnJoin">Junta-te a Nós</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <h3 class="footer__section-title">VO.U.</h3>
+          <p style="color: rgba(255,255,255,0.8); margin-bottom: var(--space-4);">
+            Associação de Voluntariado Universitário dedicada a transformar vidas desde 2008.
+          </p>
+          <div class="footer__social">
+            <a href="https://www.facebook.com/VO.U.associacao?locale=pt_PT" class="footer__social-link" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com/vou.associacao/" class="footer__social-link" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="footer__section-title">Links Rápidos</h3>
+          <ul class="footer__list">
+            <li><a href="sobre.html" class="footer__link">Sobre Nós</a></li>
+            <li><a href="nucleos.html" class="footer__link">Núcleos</a></li>
+            <li><a href="projetos.html" class="footer__link">Projetos</a></li>
+            <li><a href="inscricoes.html#main-content" class="footer__link">Inscreve-te</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer__section-title">Projetos</h3>
+          <ul class="footer__list">
+            <li><a href="projetos.html#vou-formar" class="footer__link">VO.U. Formar</a></li>
+            <li><a href="projetos.html#vou-pela-natureza" class="footer__link">VO.U. Pela Natureza</a></li>
+            <li><a href="projetos.html#vou-acompanhar" class="footer__link">VO.U. Acompanhar</a></li>
+            <li><a href="projetos.html#vou-cuidar" class="footer__link">VO.U. Cuidar</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer__section-title">Contacto</h3>
+          <ul class="footer__list">
+            <li style="color: rgba(255,255,255,0.8);">
+              <i class="fas fa-map-marker-alt"></i>
+              A/C ICBAS:
+            </li>
+            <li style="color: rgba(255,255,255,0.8); padding-left: 1.5rem;">
+              Rua Jorge Viterbo Ferreira, 228
+            </li>
+            <li style="color: rgba(255,255,255,0.8); padding-left: 1.5rem;">
+              4050-313 Porto, Portugal
+            </li>
+            <li>
+              <a href="mailto:geral@vou.pt" class="footer__link">
+                <i class="fas fa-envelope"></i>
+                geral@vou.pt
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>&copy; 2024 VO.U. - Associação de Voluntariado Universitário. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="js/translations.js"></script>
+  <script src="js/language.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

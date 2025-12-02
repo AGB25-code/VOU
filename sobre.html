@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Conhece a história da VO.U., a nossa missão, visão e valores. Associação de voluntariado universitário fundada em 2008 no Porto.">
+  <title>Sobre Nós | VO.U. - Associação de Voluntariado Universitário</title>
+
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <style>
+    .timeline {
+      position: relative;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: var(--space-8) 0;
+    }
+
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 4px;
+      height: 100%;
+      background: var(--color-primary);
+    }
+
+    .timeline-item {
+      position: relative;
+      margin-bottom: var(--space-12);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .timeline-item:nth-child(odd) {
+      flex-direction: row-reverse;
+    }
+
+    .timeline-content {
+      width: 45%;
+      background: white;
+      padding: var(--space-6);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-md);
+      transition: var(--transition-base);
+    }
+
+    .timeline-content:hover {
+      box-shadow: var(--shadow-xl);
+      transform: translateY(-5px);
+    }
+
+    .timeline-year {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80px;
+      height: 80px;
+      background: var(--color-primary);
+      color: white;
+      border-radius: var(--radius-full);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: var(--text-xl);
+      font-weight: var(--font-bold);
+      box-shadow: var(--shadow-primary);
+      z-index: 2;
+    }
+
+    .timeline-title {
+      font-size: var(--text-xl);
+      margin-bottom: var(--space-2);
+      color: var(--color-primary);
+    }
+
+    @media (max-width: 767px) {
+      .timeline::before {
+        left: 40px;
+      }
+
+      .timeline-item,
+      .timeline-item:nth-child(odd) {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 80px;
+      }
+
+      .timeline-content {
+        width: 100%;
+      }
+
+      .timeline-year {
+        left: 40px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <a href="#main-content" class="skip-to-main">Saltar para o conteúdo principal</a>
+
+  <!-- ==================== HEADER ==================== -->
+  <header class="header" id="header">
+    <div class="container header__container">
+      <!-- Logo -->
+      <a href="index.html" class="header__logo">
+        <img src="images/logos/logo.png" alt="VO.U. - Associação de Voluntariado Universitário" class="header__logo-img">
+      </a>
+
+      <!-- Navigation -->
+      <nav class="nav">
+        <button class="nav__toggle" id="nav-toggle" aria-label="Toggle navigation">
+          <span class="nav__toggle-line"></span>
+          <span class="nav__toggle-line"></span>
+          <span class="nav__toggle-line"></span>
+        </button>
+
+        <ul class="nav__list" id="nav-menu">
+          <li class="nav__item">
+            <a href="index.html" class="nav__link" data-i18n="nav.home">Início</a>
+          </li>
+          <li class="nav__item">
+            <a href="sobre.html" class="nav__link active" data-i18n="nav.about">Sobre</a>
+          </li>
+          <li class="nav__item">
+            <a href="nucleos.html" class="nav__link" data-i18n="nav.cores">Núcleos</a>
+          </li>
+          <li class="nav__item">
+            <a href="projetos.html" class="nav__link" data-i18n="nav.projects">Projetos</a>
+          </li>
+          <li class="nav__item">
+            <a href="faqs.html" class="nav__link" data-i18n="nav.faqs">FAQs</a>
+          </li>
+          <li class="nav__item">
+            <a href="contactos.html" class="nav__link" data-i18n="nav.contact">Contactos</a>
+          </li>
+          <li class="nav__item nav__cta">
+            <a href="inscricoes.html#main-content" class="btn btn-primary" data-i18n="nav.join">Junta-te a Nós</a>
+          </li>
+          <li class="nav__item nav__item--language">
+            <div class="language-toggle">
+              <button class="language-toggle__btn" data-lang="pt" aria-label="Switch to Portuguese">PT</button>
+              <span class="language-toggle__separator">|</span>
+              <button class="language-toggle__btn" data-lang="en" aria-label="Switch to English">EN</button>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- Hero Section -->
+    <section class="hero" style="min-height: 50vh;">
+      <div class="hero__background">
+        <img src="images/hero/about-hero.jpg" alt="Sobre a VO.U." class="hero__background-image">
+      </div>
+      <div class="hero__overlay"></div>
+      <div class="hero__content">
+        <p class="hero__subtitle">Quem Somos</p>
+        <h1 class="hero__title">Sobre a VO.U.</h1>
+        <p class="hero__description">
+          Mais de 15 anos a transformar vidas através do voluntariado universitário
+        </p>
+      </div>
+    </section>
+
+    <!-- Mission, Vision, Values -->
+    <section class="section section-lg">
+      <div class="container">
+        <div class="grid grid-3">
+          <div class="card">
+            <div class="card__body text-center">
+              <div style="font-size: 4rem; color: var(--color-primary); margin-bottom: var(--space-4);">
+                <i class="fas fa-bullseye"></i>
+              </div>
+              <h3 class="card__title">Missão</h3>
+              <p class="card__text">
+                Promover o voluntariado universitário, capacitando jovens para intervirem de forma estruturada e sustentável em causas sociais, ambientais e culturais.
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card__body text-center">
+              <div style="font-size: 4rem; color: var(--color-secondary); margin-bottom: var(--space-4);">
+                <i class="fas fa-eye"></i>
+              </div>
+              <h3 class="card__title">Visão</h3>
+              <p class="card__text">
+                Ser uma referência nacional no voluntariado universitário, criando impacto positivo e duradouro nas comunidades que servimos.
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card__body text-center">
+              <div style="font-size: 4rem; color: var(--color-success); margin-bottom: var(--space-4);">
+                <i class="fas fa-heart"></i>
+              </div>
+              <h3 class="card__title">Valores</h3>
+              <p class="card__text">
+                Solidariedade, compromisso, inclusão, sustentabilidade e inovação social são os pilares que guiam todas as nossas ações.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Timeline -->
+    <section class="section" style="background: var(--bg-secondary);">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-header__subtitle">A Nossa História</p>
+          <h2 class="section-header__title">15 Anos de Impacto</h2>
+          <p class="section-header__description">
+            Da fundação em 2008 até hoje, a nossa jornada de transformação social
+          </p>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <h4 class="timeline-title">A Fundação</h4>
+              <p>
+                A VO.U. nasce na cidade do Porto, resultado do reconhecimento do múltiplo potencial dos jovens estudantes universitários para combater necessidades da sociedade.
+              </p>
+            </div>
+            <div class="timeline-year">2008</div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <h4 class="timeline-title">Primeiros Projetos</h4>
+              <p>
+                Lançamento dos primeiros projetos de voluntariado em áreas da saúde e apoio social. Início das parcerias com instituições locais.
+              </p>
+            </div>
+            <div class="timeline-year">2010</div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <h4 class="timeline-title">Expansão</h4>
+              <p>
+                Crescimento significativo com a criação de novos núcleos e projetos. Implementação de programas de formação para voluntários.
+              </p>
+            </div>
+            <div class="timeline-year">2015</div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <h4 class="timeline-title">Reconhecimento</h4>
+              <p>
+                Reconhecimento oficial como uma das principais associações de voluntariado universitário em Portugal. Mais de 300 voluntários ativos.
+              </p>
+            </div>
+            <div class="timeline-year">2020</div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <h4 class="timeline-title">Atualidade</h4>
+              <p>
+                Hoje, a VO.U. conta com 5 núcleos, 10 projetos ativos e mais de 500 voluntários. Continuamos a crescer e a transformar vidas.
+              </p>
+            </div>
+            <div class="timeline-year">2024</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Values in Detail -->
+    <section class="section section-lg">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-header__subtitle">Os Nossos Valores</p>
+          <h2 class="section-header__title">O Que Nos Define</h2>
+        </div>
+
+        <div class="grid grid-2">
+          <div class="card">
+            <div class="card__body">
+              <div style="font-size: 3rem; color: var(--color-primary); margin-bottom: var(--space-3);">
+                <i class="fas fa-hands-helping"></i>
+              </div>
+              <h4 class="card__title">Solidariedade</h4>
+              <p class="card__text">
+                Acreditamos na força da união e na capacidade de cada pessoa fazer a diferença. Trabalhamos juntos para apoiar quem mais precisa, promovendo uma sociedade mais justa e equitativa.
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card__body">
+              <div style="font-size: 3rem; color: var(--color-secondary); margin-bottom: var(--space-3);">
+                <i class="fas fa-handshake"></i>
+              </div>
+              <h4 class="card__title">Compromisso</h4>
+              <p class="card__text">
+                O nosso compromisso vai além do voluntariado pontual. Dedicamo-nos a criar impacto sustentável e duradouro, mantendo a qualidade e consistência em todas as nossas ações.
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card__body">
+              <div style="font-size: 3rem; color: var(--color-success); margin-bottom: var(--space-3);">
+                <i class="fas fa-users"></i>
+              </div>
+              <h4 class="card__title">Inclusão</h4>
+              <p class="card__text">
+                Valorizamos a diversidade e promovemos um ambiente acolhedor para todos. Cada pessoa, independentemente da sua origem ou experiência, tem um papel valioso na nossa comunidade.
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card__body">
+              <div style="font-size: 3rem; color: var(--color-info); margin-bottom: var(--space-3);">
+                <i class="fas fa-leaf"></i>
+              </div>
+              <h4 class="card__title">Sustentabilidade</h4>
+              <p class="card__text">
+                Pensamos no futuro em todas as nossas ações. Promovemos práticas sustentáveis e consciência ambiental, garantindo que o nosso impacto positivo perdure no tempo.
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card__body">
+              <div style="font-size: 3rem; color: var(--color-warning); margin-bottom: var(--space-3);">
+                <i class="fas fa-lightbulb"></i>
+              </div>
+              <h4 class="card__title">Inovação Social</h4>
+              <p class="card__text">
+                Buscamos constantemente novas formas de criar impacto social. Através da criatividade e inovação, desenvolvemos soluções eficazes para os desafios da nossa sociedade.
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card__body">
+              <div style="font-size: 3rem; color: var(--color-danger); margin-bottom: var(--space-3);">
+                <i class="fas fa-star"></i>
+              </div>
+              <h4 class="card__title">Excelência</h4>
+              <p class="card__text">
+                Procuramos a excelência em tudo o que fazemos. Formamos os nossos voluntários, estabelecemos altos padrões de qualidade e avaliamos constantemente o nosso impacto.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section">
+      <div class="container">
+        <div class="cta">
+          <h2 class="cta__title">Faz Parte da Nossa História</h2>
+          <p class="cta__description">
+            Junta-te a nós e ajuda a escrever os próximos capítulos desta jornada de transformação social.
+          </p>
+          <div class="cta__buttons">
+            <a href="inscricoes.html#main-content" class="btn btn-primary btn-lg" style="background: white; color: var(--color-secondary); border-color: white;">
+              <i class="fas fa-hands-helping"></i>
+              Tornar-me Voluntário
+            </a>
+            <a href="projetos.html" class="btn btn-outline-primary btn-lg" style="border-color: white; color: white;">
+              <i class="fas fa-project-diagram"></i>
+              Conhece os Projetos
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <h3 class="footer__section-title">VO.U.</h3>
+          <p style="color: rgba(255,255,255,0.8); margin-bottom: var(--space-4);">
+            Associação de Voluntariado Universitário dedicada a transformar vidas desde 2008.
+          </p>
+          <div class="footer__social">
+            <a href="https://www.facebook.com/VO.U.associacao?locale=pt_PT" class="footer__social-link" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com/vou.associacao/" class="footer__social-link" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="footer__section-title">Links Rápidos</h3>
+          <ul class="footer__list">
+            <li><a href="sobre.html" class="footer__link">Sobre Nós</a></li>
+            <li><a href="nucleos.html" class="footer__link">Núcleos</a></li>
+            <li><a href="projetos.html" class="footer__link">Projetos</a></li>
+            <li><a href="inscricoes.html#main-content" class="footer__link">Inscreve-te</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer__section-title">Projetos</h3>
+          <ul class="footer__list">
+            <li><a href="projetos.html#vou-formar" class="footer__link">VO.U. Formar</a></li>
+            <li><a href="projetos.html#vou-pela-natureza" class="footer__link">VO.U. Pela Natureza</a></li>
+            <li><a href="projetos.html#vou-acompanhar" class="footer__link">VO.U. Acompanhar</a></li>
+            <li><a href="projetos.html#vou-cuidar" class="footer__link">VO.U. Cuidar</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer__section-title">Contacto</h3>
+          <ul class="footer__list">
+            <li style="color: rgba(255,255,255,0.8);"><i class="fas fa-map-marker-alt"></i> Porto, Portugal</li>
+            <li><a href="mailto:geral@vou-associacao.pt" class="footer__link"><i class="fas fa-envelope"></i> geral@vou-associacao.pt</a></li>
+            <li><a href="contactos.html" class="footer__link"><i class="fas fa-phone"></i> Formulário de Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>&copy; 2024 VO.U. - Associação de Voluntariado Universitário. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="js/translations.js"></script>
+  <script src="js/language.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

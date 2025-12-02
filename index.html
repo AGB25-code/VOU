@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Junta-te à VO.U. e faz a diferença! Associação de voluntariado universitário em Porto com projetos em saúde, natureza, cultura e direitos humanos.">
+  <meta name="keywords" content="voluntariado, Porto, universidade, VO.U., associação, voluntários, projetos sociais">
+  <meta name="author" content="VO.U. - Associação de Voluntariado Universitário">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://vou-associacao.pt/">
+  <meta property="og:title" content="VO.U. - Associação de Voluntariado Universitário">
+  <meta property="og:description" content="Transforma vidas através do voluntariado. Junta-te à VO.U. e faz parte da mudança!">
+  <meta property="og:image" content="https://vou-associacao.pt/images/og-image.jpg">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="VO.U. - Associação de Voluntariado Universitário">
+  <meta property="twitter:description" content="Transforma vidas através do voluntariado. Junta-te à VO.U. e faz parte da mudança!">
+
+  <title>VO.U. - Associação de Voluntariado Universitário | Porto</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/main.css">
+
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <style>
+    /* Landing Page - All White Text */
+    #main-content .section-header__subtitle,
+    #main-content .section-header__title,
+    #main-content .section-header__description,
+    #main-content .card__title,
+    #main-content .card__text,
+    #main-content .stats__number,
+    #main-content .stats__label,
+    #main-content h1, #main-content h2, #main-content h3, #main-content h4,
+    #main-content p {
+      color: white !important;
+    }
+
+    /* Add dark overlay to About section for contrast */
+    #main-content > section:nth-of-type(2) {
+      background: linear-gradient(135deg, var(--color-yellow-800) 0%, var(--color-yellow-900) 100%) !important;
+      position: relative;
+    }
+
+    /* Add dark overlay to Benefits section for contrast */
+    #main-content > section:nth-of-type(5) {
+      background: linear-gradient(135deg, var(--color-yellow-700) 0%, var(--color-yellow-900) 100%) !important;
+    }
+
+    /* Ensure cards have dark backgrounds for readability */
+    #main-content .card {
+      background: rgba(0, 0, 0, 0.3) !important;
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    /* Keep icons white */
+    #main-content .card i,
+    #main-content .section i {
+      color: white !important;
+      opacity: 0.9;
+    }
+
+    /* Add text shadow for better readability */
+    #main-content .section-header__title,
+    #main-content .card__title {
+      text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    }
+
+    #main-content .section-header__description,
+    #main-content .card__text {
+      text-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Stats section - ensure dark background */
+    #main-content .stats {
+      background: linear-gradient(135deg, var(--color-yellow-900) 0%, #6B5300 100%) !important;
+    }
+
+    #main-content .stats__number,
+    #main-content .stats__label {
+      text-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+    }
+  </style>
+</head>
+<body>
+  <!-- Skip to main content for accessibility -->
+  <a href="#main-content" class="skip-to-main">Saltar para o conteúdo principal</a>
+
+  <!-- ==================== HEADER ==================== -->
+  <header class="header" id="header">
+    <div class="container header__container">
+      <!-- Logo -->
+      <a href="index.html" class="header__logo">
+        <img src="images/logos/logo.png" alt="VO.U. - Associação de Voluntariado Universitário" class="header__logo-img">
+      </a>
+
+      <!-- Navigation -->
+      <nav class="nav">
+        <button class="nav__toggle" id="nav-toggle" aria-label="Toggle navigation">
+          <span class="nav__toggle-line"></span>
+          <span class="nav__toggle-line"></span>
+          <span class="nav__toggle-line"></span>
+        </button>
+
+        <ul class="nav__list" id="nav-menu">
+          <li class="nav__item">
+            <a href="index.html" class="nav__link active" data-i18n="nav.home">Início</a>
+          </li>
+          <li class="nav__item">
+            <a href="sobre.html" class="nav__link" data-i18n="nav.about">Sobre</a>
+          </li>
+          <li class="nav__item">
+            <a href="nucleos.html" class="nav__link" data-i18n="nav.cores">Núcleos</a>
+          </li>
+          <li class="nav__item">
+            <a href="projetos.html" class="nav__link" data-i18n="nav.projects">Projetos</a>
+          </li>
+          <li class="nav__item">
+            <a href="faqs.html" class="nav__link" data-i18n="nav.faqs">FAQs</a>
+          </li>
+          <li class="nav__item">
+            <a href="contactos.html" class="nav__link" data-i18n="nav.contact">Contactos</a>
+          </li>
+          <li class="nav__item nav__cta">
+            <a href="inscricoes.html#main-content" class="btn btn-primary" data-i18n="nav.join">Junta-te a Nós</a>
+          </li>
+          <li class="nav__item nav__item--language">
+            <div class="language-toggle">
+              <button class="language-toggle__btn" data-lang="pt" aria-label="Switch to Portuguese">PT</button>
+              <span class="language-toggle__separator">|</span>
+              <button class="language-toggle__btn" data-lang="en" aria-label="Switch to English">EN</button>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ==================== MAIN CONTENT ==================== -->
+  <main id="main-content">
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero__background">
+        <img src="images/hero/landing.png" alt="Voluntários VO.U. em ação" class="hero__background-image">
+      </div>
+      <div class="hero__overlay"></div>
+
+      <div class="hero__content">
+        <p class="hero__subtitle" data-i18n="hero.subtitle">Associação de Voluntariado Universitário</p>
+        <h1 class="hero__title" data-i18n="hero.title">Transforma Vidas Através do Voluntariado</h1>
+        <p class="hero__description" data-i18n="hero.description">
+          Somos a VO.U., uma associação de voluntariado universitário dedicada a fazer a diferença nas áreas da saúde, natureza, direitos humanos e bem-estar social.
+        </p>
+        <div class="hero__buttons">
+          <a href="inscricoes.html#main-content" class="btn btn-secondary btn-lg">
+            <i class="fas fa-heart"></i>
+            <span data-i18n="hero.btnJoin">Junta-te a Nós</span>
+          </a>
+          <a href="projetos.html" class="btn btn-outline-primary btn-lg" style="border-color: white; color: white;">
+            <i class="fas fa-arrow-right"></i>
+            <span data-i18n="hero.btnProjects">Conhece os Projetos</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Preview Section -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-header__subtitle" data-i18n="about.subtitle">Quem Somos</p>
+          <h2 class="section-header__title" data-i18n="about.title">Fazemos a Diferença Desde 2008</h2>
+          <p class="section-header__description" data-i18n="about.description">
+            A VO.U. é uma associação sem fins lucrativos que surgiu em 2008, na cidade do Porto, como resultado do reconhecimento do múltiplo potencial dos jovens universitários para o combate de algumas das carências da nossa sociedade. Inicialmente, dedicava-se apenas ao acompanhamento de idosos em situações de isolamento. Atualmente, como resultado do seu crescimento, dedica-se à promoção da saúde e do bem estar animal, à proteção da Natureza, ao acompanhamento social também na vertente infanto-juvenil e à defesa dos Direitos Humanos.
+          </p>
+        </div>
+
+        <div class="grid grid-3">
+          <!-- Mission Card -->
+          <div class="card">
+            <div class="card__body">
+              <div style="font-size: 3rem; color: var(--color-primary); margin-bottom: var(--space-4);">
+                <i class="fas fa-bullseye"></i>
+              </div>
+              <h3 class="card__title" data-i18n="about.mission.title">Missão</h3>
+              <p class="card__text" data-i18n="about.mission.text">
+                Promover o voluntariado universitário, capacitando jovens para intervirem de forma estruturada e sustentável em causas sociais, ambientais e culturais.
+              </p>
+            </div>
+          </div>
+
+          <!-- Vision Card -->
+          <div class="card">
+            <div class="card__body">
+              <div style="font-size: 3rem; color: var(--color-secondary); margin-bottom: var(--space-4);">
+                <i class="fas fa-eye"></i>
+              </div>
+              <h3 class="card__title" data-i18n="about.vision.title">Visão</h3>
+              <p class="card__text" data-i18n="about.vision.text">
+                Ser uma referência nacional no voluntariado universitário, criando impacto positivo e duradouro nas comunidades que servimos.
+              </p>
+            </div>
+          </div>
+
+          <!-- Values Card -->
+          <div class="card">
+            <div class="card__body">
+              <div style="font-size: 3rem; color: var(--color-success); margin-bottom: var(--space-4);">
+                <i class="fas fa-heart"></i>
+              </div>
+              <h3 class="card__title" data-i18n="about.values.title">Valores</h3>
+              <p class="card__text" data-i18n="about.values.text">
+                Solidariedade, compromisso, inclusão, sustentabilidade e inovação social são os pilares que guiam todas as nossas ações.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+      <div class="container">
+        <div class="stats__grid">
+          <div class="stats__item">
+            <div class="stats__number" data-count="500">0</div>
+            <div class="stats__label" data-i18n="stats.volunteers">Voluntários Ativos</div>
+          </div>
+          <div class="stats__item">
+            <div class="stats__number" data-count="10">0</div>
+            <div class="stats__label" data-i18n="stats.projects">Projetos em Ação</div>
+          </div>
+          <div class="stats__item">
+            <div class="stats__number" data-count="15">0</div>
+            <div class="stats__label" data-i18n="stats.years">Anos de Impacto</div>
+          </div>
+          <div class="stats__item">
+            <div class="stats__number" data-count="20000">0</div>
+            <div class="stats__label" data-i18n="stats.hours">Horas de Voluntariado</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Projects Section -->
+    <section class="section section-lg projects-section">
+      <div class="projects-section__background">
+        <img src="projetos.png" alt="Projetos VO.U." class="projects-section__image">
+      </div>
+      <div class="projects-section__overlay"></div>
+
+      <div class="container" style="position: relative; z-index: 2;">
+        <div class="section-header">
+          <p class="section-header__subtitle" data-i18n="projects.subtitle" style="color: white;">O Que Fazemos</p>
+          <h2 class="section-header__title" data-i18n="projects.title" style="color: white;">Os Nossos Projetos</h2>
+          <p class="section-header__description" data-i18n="projects.description" style="color: rgba(255, 255, 255, 0.95);">
+            A VO.U. é constituída por 10 projetos que atuam nas mais diversas áreas, tais como: saúde, animais, natureza, dança, idosos, crianças, artes e Direitos Humanos! Vem descobri-los!
+          </p>
+        </div>
+
+        <div class="text-center" style="margin-top: var(--space-8);">
+          <a href="projetos.html" class="btn btn-primary btn-lg">
+            <span data-i18n="projects.btnViewAll">Ver Todos os Projetos</span>
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Volunteer Section -->
+    <section class="section" style="background: var(--bg-secondary);">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-header__subtitle" data-i18n="benefits.subtitle">Porquê Voluntariar-se?</p>
+          <h2 class="section-header__title" data-i18n="benefits.title">Os Benefícios do Voluntariado</h2>
+        </div>
+
+        <div class="grid grid-4">
+          <div class="card">
+            <div class="card__body text-center">
+              <div style="font-size: 2.5rem; color: var(--color-primary); margin-bottom: var(--space-3);">
+                <i class="fas fa-users"></i>
+              </div>
+              <h4 class="card__title" data-i18n="benefits.meetPeople.title">Conhece Pessoas</h4>
+              <p class="card__text" data-i18n="benefits.meetPeople.text">
+                Cria laços com jovens que partilham os mesmos valores e vontade de mudar o mundo.
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card__body text-center">
+              <div style="font-size: 2.5rem; color: var(--color-secondary); margin-bottom: var(--space-3);">
+                <i class="fas fa-chart-line"></i>
+              </div>
+              <h4 class="card__title" data-i18n="benefits.skills.title">Desenvolve Competências</h4>
+              <p class="card__text" data-i18n="benefits.skills.text">
+                Adquire soft skills valiosas: trabalho em equipa, liderança, comunicação e gestão.
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card__body text-center">
+              <div style="font-size: 2.5rem; color: var(--color-success); margin-bottom: var(--space-3);">
+                <i class="fas fa-heart"></i>
+              </div>
+              <h4 class="card__title" data-i18n="benefits.impact.title">Impacto Real</h4>
+              <p class="card__text" data-i18n="benefits.impact.text">
+                Vê o resultado direto das tuas ações e sente a satisfação de ajudar quem mais precisa.
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card__body text-center">
+              <div style="font-size: 2.5rem; color: var(--color-info); margin-bottom: var(--space-3);">
+                <i class="fas fa-certificate"></i>
+              </div>
+              <h4 class="card__title" data-i18n="benefits.cv.title">Valoriza o CV</h4>
+              <p class="card__text" data-i18n="benefits.cv.text">
+                Enriquece o teu currículo com experiência prática reconhecida e certificada.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="section">
+      <div class="container">
+        <div class="cta">
+          <h2 class="cta__title" data-i18n="cta.title">Faz a Diferença Hoje</h2>
+          <p class="cta__description" data-i18n="cta.description">
+            Junta-te a centenas de jovens que dedicam o seu tempo a transformar vidas. A mudança começa contigo!
+          </p>
+          <div class="cta__buttons">
+            <a href="inscricoes.html#main-content" class="btn btn-primary btn-lg" style="background: white; color: var(--color-secondary); border-color: white;">
+              <i class="fas fa-hands-helping"></i>
+              <span data-i18n="cta.btnVolunteer">Tornar-me Voluntário</span>
+            </a>
+            <a href="sobre.html" class="btn btn-outline-primary btn-lg" style="border-color: white; color: white;">
+              <i class="fas fa-info-circle"></i>
+              <span data-i18n="cta.btnLearnMore">Saber Mais Sobre Nós</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <!-- About Section -->
+        <div>
+          <h3 class="footer__section-title">VO.U.</h3>
+          <p style="color: rgba(255,255,255,0.8); margin-bottom: var(--space-4);" data-i18n="footer.about">
+            Associação de Voluntariado Universitário dedicada a transformar vidas desde 2008.
+          </p>
+          <div class="footer__social">
+            <a href="https://www.facebook.com/VO.U.associacao?locale=pt_PT" class="footer__social-link" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com/vou.associacao/" class="footer__social-link" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h3 class="footer__section-title" data-i18n="footer.quickLinks">Links Rápidos</h3>
+          <ul class="footer__list">
+            <li><a href="sobre.html" class="footer__link" data-i18n="nav.about">Sobre Nós</a></li>
+            <li><a href="nucleos.html" class="footer__link" data-i18n="nav.cores">Núcleos</a></li>
+            <li><a href="projetos.html" class="footer__link" data-i18n="nav.projects">Projetos</a></li>
+            <li><a href="inscricoes.html" class="footer__link" data-i18n="nav.join">Inscreve-te</a></li>
+          </ul>
+        </div>
+
+        <!-- Projects -->
+        <div>
+          <h3 class="footer__section-title" data-i18n="footer.projectsTitle">Projetos</h3>
+          <ul class="footer__list">
+            <li><a href="projetos.html#vou-formar" class="footer__link" data-i18n="projects.vouFormar.title">VO.U. Formar</a></li>
+            <li><a href="projetos.html#vou-pela-natureza" class="footer__link" data-i18n="projects.vouNatureza.title">VO.U. Pela Natureza</a></li>
+            <li><a href="projetos.html#vou-acompanhar" class="footer__link" data-i18n="projects.vouAcompanhar.title">VO.U. Acompanhar</a></li>
+            <li><a href="projetos.html#vou-cuidar" class="footer__link" data-i18n="projects.vouCuidar.title">VO.U. Cuidar</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div>
+          <h3 class="footer__section-title" data-i18n="footer.contactTitle">Contacto</h3>
+          <ul class="footer__list">
+            <li style="color: rgba(255,255,255,0.8);">
+              <i class="fas fa-map-marker-alt"></i>
+              A/C ICBAS:
+            </li>
+            <li style="color: rgba(255,255,255,0.8); padding-left: 1.5rem;">
+              Rua Jorge Viterbo Ferreira, 228
+            </li>
+            <li style="color: rgba(255,255,255,0.8); padding-left: 1.5rem;">
+              4050-313 Porto, Portugal
+            </li>
+            <li>
+              <a href="mailto:geral@vou.pt" class="footer__link">
+                <i class="fas fa-envelope"></i>
+                geral@vou.pt
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer__bottom">
+        <p data-i18n="footer.copyright">&copy; 2024 VO.U. - Associação de Voluntariado Universitário. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="js/translations.js"></script>
+  <script src="js/language.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
