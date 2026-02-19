@@ -82,7 +82,7 @@
     <!-- Projects Grid -->
     <section class="section section-lg">
       <div class="container">
-        <!-- Filter Buttons (Optional - can be activated with JS) -->
+        <!-- Filter Buttons -->
         <div style="display: flex; gap: var(--space-2); justify-content: center; flex-wrap: wrap; margin-bottom: var(--space-12);">
           <button class="btn btn-sm btn-primary" data-filter="all">Todos</button>
           <button class="btn btn-sm btn-outline-primary" data-filter="saude">Saúde</button>
@@ -92,126 +92,78 @@
           <button class="btn btn-sm btn-outline-primary" data-filter="educacao">Educação</button>
         </div>
 
-        <div class="grid grid-3">
-          <!-- VO.U. Formar -->
-          <div class="project-card" id="vou-formar" data-category="educacao">
-            <img src="images/projects/vou-formar.jpg" alt="VO.U. Formar" class="project-card__image">
-            <div class="project-card__overlay">
-              <span class="project-card__category">Educação</span>
-              <h3 class="project-card__title">VO.U. Formar</h3>
-              <p class="project-card__description">
-                Formação e capacitação de voluntários e comunidades através de workshops, formações e ações educativas que promovem o desenvolvimento pessoal e profissional.
-              </p>
-            </div>
+        <div class="grid grid-3" style="gap: var(--space-8);">
+
+          <!-- VO.U. Socorrer -->
+          <div class="card" id="vou-socorrer" data-category="saude" style="text-align: center; padding: var(--space-8);">
+            <img src="logos_independentes/socorrer.png" style="width: 110px; height: 110px; border-radius: 50%; display: block; margin: 0 auto var(--space-5);">
+            <h3 class="card__title" style="font-size: var(--text-xl);">VO.U. Socorrer</h3>
+            <p class="card__text">Apoio em primeiros socorros e ações de sensibilização para a saúde e emergência médica nas comunidades.</p>
           </div>
 
-          <!-- VO.U. Pela Natureza -->
-          <div class="project-card" id="vou-pela-natureza" data-category="ambiente">
-            <img src="images/projects/vou-pela-natureza.jpg" alt="VO.U. Pela Natureza" class="project-card__image">
-            <div class="project-card__overlay">
-              <span class="project-card__category">Ambiente</span>
-              <h3 class="project-card__title">VO.U. Pela Natureza</h3>
-              <p class="project-card__description">
-                Preservação ambiental através de limpezas, reflorestação e sensibilização ecológica. Protegemos o planeta para as gerações futuras.
-              </p>
-            </div>
+          <!-- VO.U. Rodar Cultura -->
+          <div class="card" id="vou-rodar-cultura" data-category="cultura" style="text-align: center; padding: var(--space-8);">
+            <img src="logos_independentes/rodar_cultura.png" style="width: 110px; height: 110px; border-radius: 50%; display: block; margin: 0 auto var(--space-5);">
+            <h3 class="card__title" style="font-size: var(--text-xl);">VO.U. Rodar Cultura</h3>
+            <p class="card__text">Promoção e dinamização cultural através de eventos, exposições e atividades que enriquecem a comunidade.</p>
           </div>
 
           <!-- VO.U. Acompanhar -->
-          <div class="project-card" id="vou-acompanhar" data-category="social">
-            <img src="images/projects/vou-acompanhar.jpg" alt="VO.U. Acompanhar" class="project-card__image">
-            <div class="project-card__overlay">
-              <span class="project-card__category">Social</span>
-              <h3 class="project-card__title">VO.U. Acompanhar</h3>
-              <p class="project-card__description">
-                Acompanhamento de idosos, proporcionando companhia, apoio e momentos de convívio. Combatemos a solidão e promovemos o bem-estar.
-              </p>
-            </div>
+          <div class="card" id="vou-acompanhar" data-category="social" style="text-align: center; padding: var(--space-8);">
+            <img src="logos_independentes/acompanhar.png" style="width: 110px; height: 110px; border-radius: 50%; display: block; margin: 0 auto var(--space-5);">
+            <h3 class="card__title" style="font-size: var(--text-xl);">VO.U. Acompanhar</h3>
+            <p class="card__text">Acompanhamento de idosos, proporcionando companhia, apoio e momentos de convívio. Combatemos a solidão.</p>
+          </div>
+
+          <!-- VO.U. Pela Natureza -->
+          <div class="card" id="vou-pela-natureza" data-category="ambiente" style="text-align: center; padding: var(--space-8);">
+            <img src="logos_independentes/natureza.png" style="width: 110px; height: 110px; border-radius: 50%; display: block; margin: 0 auto var(--space-5);">
+            <h3 class="card__title" style="font-size: var(--text-xl);">VO.U. Pela Natureza</h3>
+            <p class="card__text">Preservação ambiental através de limpezas, reflorestação e sensibilização ecológica. Protegemos o planeta.</p>
+          </div>
+
+          <!-- VO.U. Pelos Animais -->
+          <div class="card" id="vou-pelos-animais" data-category="ambiente" style="text-align: center; padding: var(--space-8);">
+            <img src="logos_independentes/animais.png" style="width: 110px; height: 110px; border-radius: 50%; display: block; margin: 0 auto var(--space-5);">
+            <h3 class="card__title" style="font-size: var(--text-xl);">VO.U. Pelos Animais</h3>
+            <p class="card__text">Apoio a animais abandonados e sensibilização para adoção responsável. Protegemos quem não tem voz.</p>
+          </div>
+
+          <!-- VO.U. Pirueta -->
+          <div class="card" id="vou-pirueta" data-category="cultura" style="text-align: center; padding: var(--space-8);">
+            <img src="logos_independentes/pirueta.png" style="width: 110px; height: 110px; border-radius: 50%; display: block; margin: 0 auto var(--space-5);">
+            <h3 class="card__title" style="font-size: var(--text-xl);">VO.U. Pirueta</h3>
+            <p class="card__text">Expressão artística através da dança, promovendo inclusão e bem-estar através do movimento.</p>
+          </div>
+
+          <!-- VO.U. Crescer -->
+          <div class="card" id="vou-crescer" data-category="social" style="text-align: center; padding: var(--space-8);">
+            <img src="logos_independentes/crescer.png" style="width: 110px; height: 110px; border-radius: 50%; display: block; margin: 0 auto var(--space-5);">
+            <h3 class="card__title" style="font-size: var(--text-xl);">VO.U. Crescer</h3>
+            <p class="card__text">Desenvolvimento de competências em crianças e jovens. Arte e educação como ferramentas de transformação social.</p>
           </div>
 
           <!-- VO.U. Cuidar -->
-          <div class="project-card" id="vou-cuidar" data-category="saude">
-            <img src="images/projects/vou-cuidar.jpg" alt="VO.U. Cuidar" class="project-card__image">
-            <div class="project-card__overlay">
-              <span class="project-card__category">Saúde</span>
-              <h3 class="project-card__title">VO.U. Cuidar</h3>
-              <p class="project-card__description">
-                Apoio a instituições de saúde e ações de promoção de bem-estar físico e mental. Cuidamos de quem mais precisa com dedicação.
-              </p>
-            </div>
+          <div class="card" id="vou-cuidar" data-category="saude" style="text-align: center; padding: var(--space-8);">
+            <img src="logos_independentes/cuidar.png" style="width: 110px; height: 110px; border-radius: 50%; display: block; margin: 0 auto var(--space-5);">
+            <h3 class="card__title" style="font-size: var(--text-xl);">VO.U. Cuidar</h3>
+            <p class="card__text">Apoio a instituições de saúde e promoção do bem-estar físico e mental. Cuidamos de quem mais precisa.</p>
           </div>
 
-          <!-- VO.U. Dançar -->
-          <div class="project-card" id="vou-dancar" data-category="cultura">
-            <img src="images/projects/vou-dancar.jpg" alt="VO.U. Dançar" class="project-card__image">
-            <div class="project-card__overlay">
-              <span class="project-card__category">Cultura</span>
-              <h3 class="project-card__title">VO.U. Dançar</h3>
-              <p class="project-card__description">
-                Expressão artística através da dança, promovendo inclusão, bem-estar e desenvolvimento de competências sociais através do movimento.
-              </p>
-            </div>
+          <!-- VO.U. Olhar o Mundo -->
+          <div class="card" id="vou-olhar-mundo" data-category="social" style="text-align: center; padding: var(--space-8);">
+            <img src="logos_independentes/mundo.png" style="width: 110px; height: 110px; border-radius: 50%; display: block; margin: 0 auto var(--space-5);">
+            <h3 class="card__title" style="font-size: var(--text-xl);">VO.U. Olhar o Mundo</h3>
+            <p class="card__text">Defesa e promoção dos direitos humanos e igualdade social. Lutamos por uma sociedade mais justa e inclusiva.</p>
           </div>
 
-          <!-- VO.U. Criar -->
-          <div class="project-card" id="vou-criar" data-category="cultura">
-            <img src="images/projects/vou-criar.jpg" alt="VO.U. Criar" class="project-card__image">
-            <div class="project-card__overlay">
-              <span class="project-card__category">Artes</span>
-              <h3 class="project-card__title">VO.U. Criar</h3>
-              <p class="project-card__description">
-                Desenvolvimento de competências artísticas e criativas em crianças e jovens. Arte como ferramenta de transformação social.
-              </p>
-            </div>
+          <!-- VO.U. Formar -->
+          <div class="card" id="vou-formar" data-category="educacao" style="text-align: center; padding: var(--space-8);">
+            <img src="logos_independentes/formar.png" style="width: 110px; height: 110px; border-radius: 50%; display: block; margin: 0 auto var(--space-5);">
+            <h3 class="card__title" style="font-size: var(--text-xl);">VO.U. Formar</h3>
+            <p class="card__text">Formação e capacitação de voluntários e comunidades através de workshops e ações educativas.</p>
           </div>
 
-          <!-- VO.U. com Saúde -->
-          <div class="project-card" id="vou-com-saude" data-category="saude">
-            <img src="images/projects/vou-com-saude.jpg" alt="VO.U. com Saúde" class="project-card__image">
-            <div class="project-card__overlay">
-              <span class="project-card__category">Saúde</span>
-              <h3 class="project-card__title">VO.U. com Saúde</h3>
-              <p class="project-card__description">
-                Campanhas de sensibilização e promoção de estilos de vida saudáveis. Educação para a saúde ao alcance de todos.
-              </p>
-            </div>
-          </div>
-
-          <!-- VO.U. pelos Direitos -->
-          <div class="project-card" id="vou-pelos-direitos" data-category="social">
-            <img src="images/projects/vou-pelos-direitos.jpg" alt="VO.U. pelos Direitos" class="project-card__image">
-            <div class="project-card__overlay">
-              <span class="project-card__category">Direitos Humanos</span>
-              <h3 class="project-card__title">VO.U. pelos Direitos</h3>
-              <p class="project-card__description">
-                Defesa e promoção dos direitos humanos e igualdade social. Lutamos por uma sociedade mais justa e inclusiva.
-              </p>
-            </div>
-          </div>
-
-          <!-- VO.U. com Animais -->
-          <div class="project-card" id="vou-com-animais" data-category="ambiente">
-            <img src="images/projects/vou-com-animais.jpg" alt="VO.U. com Animais" class="project-card__image">
-            <div class="project-card__overlay">
-              <span class="project-card__category">Bem-Estar Animal</span>
-              <h3 class="project-card__title">VO.U. com Animais</h3>
-              <p class="project-card__description">
-                Apoio a animais abandonados e sensibilização para adoção responsável. Protegemos quem não tem voz.
-              </p>
-            </div>
-          </div>
-
-          <!-- VO.U. Cultura -->
-          <div class="project-card" id="vou-cultura" data-category="cultura">
-            <img src="images/projects/vou-cultura.jpg" alt="VO.U. Cultura" class="project-card__image">
-            <div class="project-card__overlay">
-              <span class="project-card__category">Cultura</span>
-              <h3 class="project-card__title">VO.U. Cultura</h3>
-              <p class="project-card__description">
-                Promoção e dinamização cultural através de eventos, exposições e atividades que enriquecem a comunidade.
-              </p>
-            </div>
-          </div>
         </div>
       </div>
     </section>
@@ -270,7 +222,7 @@
             <li><a href="#vou-formar" class="footer__link">VO.U. Formar</a></li>
             <li><a href="#vou-pela-natureza" class="footer__link">VO.U. Pela Natureza</a></li>
             <li><a href="#vou-acompanhar" class="footer__link">VO.U. Acompanhar</a></li>
-            <li><a href="#vou-cuidar" class="footer__link">VO.U. Cuidar</a></li>
+            <li><a href="#vou-socorrer" class="footer__link">VO.U. Socorrer</a></li>
           </ul>
         </div>
 
