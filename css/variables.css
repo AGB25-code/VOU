@@ -7,24 +7,43 @@
 :root {
   /* ==================== COLORS ==================== */
 
-  /* Primary Colors - Golden Yellow */
-  --color-primary: #F5B700;
-  --color-primary-light: #FFD54F;
-  --color-primary-dark: #C79100;
-  --color-primary-rgb: 245, 183, 0;
+  /* Primary Colors - VO.U. Yellow (#FDD700) */
+  --color-primary: #FDD700;
+  --color-primary-light: #FEE84D;
+  --color-primary-dark: #CDB000;
+  --color-primary-rgb: 253, 215, 0;
 
-  /* Secondary Colors - Warm Amber */
-  --color-secondary: #FFB300;
-  --color-secondary-light: #FFC947;
-  --color-secondary-dark: #D69400;
-  --color-secondary-rgb: 255, 179, 0;
+  /* Secondary Colors - Warm Yellow */
+  --color-secondary: #FFE548;
+  --color-secondary-light: #FFF09A;
+  --color-secondary-dark: #D4BE00;
+  --color-secondary-rgb: 255, 229, 72;
 
   /* Accent Colors */
   --color-success: #8BC34A;
   --color-success-light: #AED581;
-  --color-info: #FFC107;
-  --color-warning: #FFB300;
-  --color-danger: #FF6B6B;
+  --color-info: #1FA3FF;
+  --color-warning: #FF9C1E;
+  --color-danger: #F20803;
+
+  /* VO.U. Núcleos Colors */
+  --color-nucleo-gestao: #A60502;
+  --color-nucleo-externo: #368200;
+  --color-nucleo-interno: #8765C9;
+  --color-nucleo-criativo: #9ECAE3;
+  --color-nucleo-cultural: #FFE548;
+
+  /* VO.U. Projetos Colors */
+  --color-projeto-socorrer: #F20803;
+  --color-projeto-rodar-cultura: #FF6006;
+  --color-projeto-acompanhar: #FF9C1E;
+  --color-projeto-natureza: #A4E578;
+  --color-projeto-animais: #4CB600;
+  --color-projeto-pirueta: #FFA9C5;
+  --color-projeto-crescer: #FF4883;
+  --color-projeto-cuidar: #AF8FFF;
+  --color-projeto-mundo: #1FA3FF;
+  --color-projeto-formar: #006CB7;
 
   /* Neutral Colors */
   --color-dark: #2D3436;
@@ -34,17 +53,17 @@
   --color-off-white: #FFFBF0;
   --color-black: #1A1A1A;
 
-  /* Yellow Theme Colors */
-  --color-yellow-50: #FFFEF7;
-  --color-yellow-100: #FFF9E6;
-  --color-yellow-200: #FFF3CC;
-  --color-yellow-300: #FFECB3;
-  --color-yellow-400: #FFE699;
-  --color-yellow-500: #FFD54F;
-  --color-yellow-600: #F5B700;
-  --color-yellow-700: #C79100;
-  --color-yellow-800: #A67C00;
-  --color-yellow-900: #856300;
+  /* Yellow Theme Colors - Based on VO.U. #FDD700 */
+  --color-yellow-50: #FFFEF5;
+  --color-yellow-100: #FFFBE0;
+  --color-yellow-200: #FFF5B3;
+  --color-yellow-300: #FEEE80;
+  --color-yellow-400: #FEE84D;
+  --color-yellow-500: #FDD700;
+  --color-yellow-600: #CDB000;
+  --color-yellow-700: #A68E00;
+  --color-yellow-800: #806E00;
+  --color-yellow-900: #5A4D00;
 
   /* Text Colors */
   --text-primary: var(--color-dark);
@@ -58,7 +77,7 @@
   --bg-secondary: var(--color-yellow-100);
   --bg-accent: var(--color-yellow-50);
   --bg-dark: var(--color-dark);
-  --bg-overlay: rgba(245, 183, 0, 0.15);
+  --bg-overlay: rgba(253, 215, 0, 0.15);
 
   /* Border Colors */
   --border-color: var(--color-yellow-300);
@@ -68,9 +87,9 @@
   /* ==================== TYPOGRAPHY ==================== */
 
   /* Font Families */
-  --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  --font-headings: 'Poppins', var(--font-primary);
-  --font-monospace: 'Fira Code', 'Courier New', monospace;
+  --font-primary: 'Roboto Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+  --font-headings: 'Roboto Condensed', var(--font-primary);
+  --font-monospace: 'Roboto Mono', 'Courier New', monospace;
 
   /* Font Sizes */
   --text-xs: 0.75rem;      /* 12px */
@@ -188,8 +207,8 @@
   --shadow-inner: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06);
 
   /* Colored Shadows */
-  --shadow-primary: 0 10px 25px -5px rgba(245, 183, 0, 0.3);
-  --shadow-secondary: 0 10px 25px -5px rgba(247, 148, 29, 0.3);
+  --shadow-primary: 0 10px 25px -5px rgba(253, 215, 0, 0.3);
+  --shadow-secondary: 0 10px 25px -5px rgba(255, 229, 72, 0.3);
 
   /* ==================== TRANSITIONS ==================== */
 
@@ -254,11 +273,11 @@
   --input-radius: var(--radius-md);
 
   /* Hero */
-  --hero-overlay: linear-gradient(135deg, rgba(245, 183, 0, 0.3) 0%, rgba(199, 145, 0, 0.4) 100%);
+  --hero-overlay: linear-gradient(135deg, rgba(253, 215, 0, 0.3) 0%, rgba(205, 176, 0, 0.4) 100%);
 
   /* Gradient Overlays */
-  --gradient-primary: linear-gradient(135deg, var(--color-yellow-600) 0%, var(--color-yellow-800) 100%);
-  --gradient-secondary: linear-gradient(135deg, var(--color-yellow-500) 0%, var(--color-yellow-700) 100%);
+  --gradient-primary: linear-gradient(135deg, var(--color-yellow-500) 0%, var(--color-yellow-700) 100%);
+  --gradient-secondary: linear-gradient(135deg, var(--color-yellow-400) 0%, var(--color-yellow-600) 100%);
   --gradient-success: linear-gradient(135deg, var(--color-success) 0%, #7CB342 100%);
   --gradient-light: linear-gradient(180deg, var(--color-yellow-50) 0%, var(--color-white) 100%);
 }

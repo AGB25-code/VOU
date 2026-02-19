@@ -4,7 +4,7 @@
  */
 
 /* Import Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Roboto+Mono:wght@300;400;500;600;700&display=swap');
 
 /* Import Variables and Reset */
 @import url('variables.css');
@@ -189,7 +189,7 @@ em {
 .nav__link:hover,
 .nav__link.active {
   color: var(--color-primary);
-  background: rgba(245, 183, 0, 0.1);
+  background: rgba(253, 215, 0, 0.1);
 }
 
 /* Language Toggle */
@@ -222,7 +222,7 @@ em {
 
 .language-toggle__btn:hover {
   color: var(--color-primary);
-  background: rgba(245, 183, 0, 0.1);
+  background: rgba(253, 215, 0, 0.1);
 }
 
 .language-toggle__btn.active {
@@ -393,7 +393,7 @@ em {
 }
 
 .btn-ghost:hover:not(:disabled) {
-  background: rgba(245, 183, 0, 0.1);
+  background: rgba(253, 215, 0, 0.1);
 }
 
 /* Button Sizes */
@@ -754,7 +754,7 @@ em {
 .form-select:focus {
   outline: none;
   border-color: var(--input-focus-border);
-  box-shadow: 0 0 0 3px rgba(245, 183, 0, 0.1);
+  box-shadow: 0 0 0 3px rgba(253, 215, 0, 0.1);
 }
 
 .form-textarea {
@@ -1077,7 +1077,7 @@ main {
 /* Cards hover effect with yellow accent */
 .card:hover {
   border-color: var(--color-primary);
-  box-shadow: 0 10px 30px rgba(245, 183, 0, 0.2);
+  box-shadow: 0 10px 30px rgba(253, 215, 0, 0.2);
 }
 
 /* Project cards with yellow category badges */
@@ -1114,7 +1114,7 @@ a:not(.btn):not(.nav__link):not(.footer__link):hover {
 .form-textarea:focus,
 .form-select:focus {
   border-color: var(--color-primary);
-  box-shadow: 0 0 0 3px rgba(245, 183, 0, 0.15);
+  box-shadow: 0 0 0 3px rgba(253, 215, 0, 0.15);
 }
 
 /* Button secondary with amber tones */
@@ -1126,13 +1126,13 @@ a:not(.btn):not(.nav__link):not(.footer__link):hover {
 .btn-secondary:hover:not(:disabled) {
   background: var(--color-secondary-dark);
   border-color: var(--color-secondary-dark);
-  box-shadow: 0 10px 25px -5px rgba(255, 179, 0, 0.3);
+  box-shadow: 0 10px 25px -5px rgba(255, 229, 72, 0.3);
 }
 
 /* Navigation active state */
 .nav__link.active {
   color: var(--color-primary-dark);
-  background: rgba(245, 183, 0, 0.12);
+  background: rgba(253, 215, 0, 0.12);
 }
 
 /* ==================== PROJECTS SECTION WITH BACKGROUND ==================== */
@@ -1161,7 +1161,7 @@ a:not(.btn):not(.nav__link):not(.footer__link):hover {
 .projects-section__overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, rgba(245, 183, 0, 0.85) 0%, rgba(199, 145, 0, 0.90) 100%);
+  background: linear-gradient(135deg, rgba(253, 215, 0, 0.85) 0%, rgba(205, 176, 0, 0.90) 100%);
   z-index: 1;
 }
 
